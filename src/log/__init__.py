@@ -1,1 +1,1 @@
-from .logger import log_io
+from .logger import log_io, create_logged_tool

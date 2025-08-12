@@ -1,0 +1,20 @@
+import os 
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
+
+
+BASIC_MODEL_NAME = os.getenv("BASIC_MODEL_NAME")
+BASIC_MODEL_PROVIDER = os.getenv("BASIC_MODEL_PROVIDER")
+BASIC_MODEL_API_KEY = os.getenv("BASIC_MODEL_API_KEY")
+
+REASONING_MODEL_NAME = os.getenv("REASONING_MODEL_NAME")
+REASONING_MODEL_PROVIDER = os.getenv("REASONING_MODEL_PROVIDER")
+REASONING_MODEL_API_KEY = os.getenv("REASONING_MODEL_API_KEY")
+
+VL_MODEL_NAME = os.getenv("VL_MODEL_NAME")
+VL_MODEL_PROVIDER = os.getenv("VL_MODEL_PROVIDER")
+VL_MODEL_API_KEY = os.getenv("VL_MODEL_API_KEY")
+
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+TAVILY_MAX_RESULTS = int(os.getenv("SEARCH_RESULTS"))
